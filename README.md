@@ -4,7 +4,7 @@ A small Python utility that downloads a video using a request copied from a brow
 
 ## Features
 
-- Reads a cURL command from the macOS clipboard.
+- Reads a cURL command from the clipboard.
 - Reuses the copied URL, HTTP method, headers, cookies, and other supported cURL options.
 - Follows redirects and reports HTTP errors.
 - Downloads to a temporary `.part` file first, then renames it to the final MP4 filename when cURL succeeds.
