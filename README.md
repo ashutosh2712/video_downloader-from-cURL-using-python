@@ -14,9 +14,8 @@ A small macOS Python utility that downloads a video using a request copied from 
 
 ## Requirements
 
-- macOS (the script uses `pbpaste` to read the clipboard)
-- Python 3
-- The `curl` command-line tool (normally preinstalled on macOS)
+- the script uses `pbpaste` to read the clipboard(Replace as per your OS support)
+- The `curl` command-line tool
 - A browser such as Chrome
 
 No third-party Python package is required for the cURL-based version of the script.
@@ -27,7 +26,7 @@ No third-party Python package is required for the cURL-based version of the scri
 2. Open Terminal and change to the folder containing the script. For example:
 
    ```bash
-   cd "/Users/your-username/Desktop/My Projects/Test-GoCardless"
+   cd "/Users/your-username/"
    ```
 
 3. Confirm Python and cURL are available:
@@ -47,17 +46,17 @@ No third-party Python package is required for the cURL-based version of the scri
 6. In Terminal, run the script from the project folder:
 
    ```bash
-   python3 video_downloader.py
+   python3 script-name.py
    ```
 
-7. On success, the video is saved as `downloaded_video.mp4` in the current working directory.
+7. On success, the video is saved as `your-filename.mp4` in the current working directory.
 
 The script reads the clipboard at runtime, so copy the cURL request immediately before running it.
 
 ## Output files
 
-- `downloaded_video.mp4` — the completed download from the last successful run.
-- `downloaded_video.mp4.part` — a temporary download file. If cURL fails, the script leaves this file in place for diagnosis instead of deleting it automatically. A `.part` file may be incomplete and may not play correctly.
+- `<your-filename>.mp4` — the completed download from the last successful run.
+- `your-filename.mp4.part` — a temporary download file. If cURL fails, the script leaves this file in place for diagnosis instead of deleting it automatically. A `.part` file may be incomplete and may not play correctly.
 
 Run the script from the project directory if you want the output saved there. The output path is relative to the current working directory, not necessarily the directory where the Python script is stored.
 
@@ -95,10 +94,9 @@ A copied cURL command can contain session cookies, authorization tokens, signed 
 ## Limitations
 
 - The workflow requires a manual copy action from Developer Tools for each request.
-- It is designed for macOS because it uses `pbpaste`.
 - cURL options copied from a browser are passed through to the installed cURL executable, but unusual shell syntax or incompatible options may still need manual adjustment.
 - Some media streams require a dedicated downloader or authorized application/API rather than saving a single network response as an MP4 file.
 
 ## License
 
-Add a license if you plan to distribute or publish this project. Otherwise, treat this repository as your own project and follow the terms that apply to the content you download.
+Ashutosh K Roy
