@@ -1,6 +1,6 @@
 # cURL Video Downloader
 
-A small macOS Python utility that downloads a video using a request copied from a browser's Developer Tools. Instead of manually copying request headers into Python, it reads a copied **cURL** command from the clipboard and runs it with the system `curl` command.
+A small Python utility that downloads a video using a request copied from a browser's Developer Tools. Instead of manually copying request headers into Python, it reads a copied **cURL** command from the clipboard and runs it with the system `curl` command.
 
 ## Features
 
